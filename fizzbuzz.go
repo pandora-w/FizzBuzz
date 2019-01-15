@@ -7,15 +7,15 @@ func main() {
 }
 
 func FizzBuzz(num int) string {
-	result := strconv.Itoa(num)
+	if num%3 == 0 && num%5 == 0 {
+		return "FizzBuzz"
 
-	if num%3 == 0 {
-		result = "Fizz"
+	} else if num%3 == 0 {
+		return "Fizz"
+
+	} else if num%5 == 0 {
+		return "Buzz"
 	}
 
-	if num == 5 {
-		result = "Buzz"
-	}
-
-	return result
+	return strconv.Itoa(num)
 }
