@@ -107,4 +107,12 @@ func TestFizzBuzz(t *testing.T) {
 			t.Errorf("If input is %d then result is %s, but result is %s", input, want, get)
 		}
 	})
+	t.Run("", func(t *testing.T) {
+		input := 14
+		want := "14"
+		get := FizzBuzz(input)
+		if get != want {
+			t.Errorf("If input is %d then result is %s, but result is %s", input, want, get)
+		}
+	})
 }
