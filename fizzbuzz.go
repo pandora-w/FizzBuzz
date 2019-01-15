@@ -9,7 +9,7 @@ func main() {
 func FizzBuzz(num int) string {
 	result := strconv.Itoa(num)
 
-	if num == 3 || num == 6 {
+	if num%3 == 0 {
 		result = "Fizz"
 	}
 
