@@ -11,5 +11,9 @@ func FizzBuzz(num int) string {
 		result = "1"
 	}
 
+	if num == 2 {
+		result = "2"
+	}
+
 	return result
 }
